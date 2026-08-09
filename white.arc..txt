@@ -1,0 +1,6 @@
+white.arc.adventure website
+
+1. Put the actual Pexels MP4 at assets/himalaya-hero.mp4.
+2. In script.js, replace INSTAGRAM_URL with the exact Instagram URL when provided.
+3. Open index.html or deploy the folder to any static host.
+4. All booking enquiries open WhatsApp to +91 97369 90769 with a pre-filled message; the customer presses Send.
