@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Local Shop</title>
+  <style>
+    body { margin:0; font-family:'Poppins',sans-serif; background:#f9f9f9; }
+    header { position:relative; text-align:center; color:white; }
+    header img { width:100%; height:70vh; object-fit:cover; filter:brightness(70%); }
+    header .overlay { position:absolute; top:0; left:0; width:100%; height:100%; display:flex; flex-direction:column; justify-content:center; align-items:center; }
+    header h1 { font-size:3rem; margin:0; }
+    header p { font-size:1.2rem; margin:10px 0; }
+    header button { background:#ff4b2b; color:white; border:none; padding:12px 25px; border-radius:5px; cursor:pointer; }
+
+    .products { padding:40px 20px; }
+    .products h2 { text-align:center; margin-bottom:20px; }
+    .carousel { display:flex; overflow-x:auto; gap:20px; }
+    .product-card { background:white; border-radius:10px; box-shadow:0 2px 8px rgba(0,0,0,0.1); min-width:250px; text-align:center; padding:15px; }
+    .product-card img { width:100%; height:180px; object-fit:cover; border-radius:8px; }
+    .product-card h3 { margin:10px 0 5px; }
+    .product-card p { color:#555; }
+    .product-card button, .product-card a { background:#ff4b2b; color:white; border:none; padding:8px 15px; border-radius:5px; cursor:pointer; text-decoration:none; display:inline-block; margin-top:5px; }
+
+    #cart-icon { position:fixed; bottom:80px; right:20px; background:#ff4b2b; color:white; border-radius:50%; width:55px; height:55px; display:flex; justify-content:center; align-items:center; font-size:1.5rem; cursor:pointer; }
+    #cart-count { position:absolute; top:5px; right:10px; background:white; color:#ff4b2b; border-radius:50%; padding:2px 6px; font-size:0.8rem; }
+
+    #cart-modal { position:fixed; top:0; right:0; width:300px; height:100%; background:white; box-shadow:-2px 0 10px rgba(0,0,0,0.2); transform:translateX(100%); transition:0.3s; padding:20px; overflow-y:auto; }
+    #cart-modal.open { transform:translateX(0); }
+    #cart-items { list-style:none; padding:0; }
+    #cart-items li { margin-bottom:10px; border-bottom:1px solid #ddd; padding-bottom:5px; }
+    #send-order { background:#ff4b2b; color:white; border:none; padding:10px; width:100%; border-radius:5px; cursor:pointer; }
+
+    .whatsapp-btn { position:fixed; bottom:15px; right:20px; background:#25D366; color:white; border-radius:50%; width:55px; height:55px; display:flex; justify-content:center; align-items:center; font-size:1.8rem; text-decoration:none; }
+    form { margin-top:15px; display:flex; flex-direction:column; gap:10px; }
+    form input { padding:8px; border:1px solid #ccc; border-radius:5px; }
+    section { padding:40px 20px; }
+    section h2 { text-align:center; margin-bottom:20px; }
+  </style>
+</head>
+<body>
+
+  <!-- Hero Section -->
+  <header>
+    <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470" alt="Hero Image">
+    <div class="overlay">
+      <h1>The Local Shop</h1>
+      <p>Fresh Finds, Best Prices</p>
+      <button onclick="document.getElementById('products').scrollIntoView({behavior:'smooth'})">Shop Now</button>
+    </div>
+  </header>
+
+  <!-- Product Carousel -->
+  <section id="products" class="products">
+    <h2>Our Packages</h2>
+    <div class="carousel">
+      <div class="product-card">
+        <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee" alt="Spiti Valley">
+        <h3>Spiti Valley Adventure</h3>
+        <p>₹45,000</p>
+        <button onclick="addToCart('Spiti Valley Adventure', 45000)">Add to Cart</button>
+        <a href="#spiti-details">Explore Itinerary</a>
+      </div>
+      <div class="product-card">
+        <img src="https://images.unsplash.com/photo-1500048993953-d23a436266cf" alt="Ladakh Expedition">
+        <h3>Ladakh Expedition</h3>
+        <p>₹55,000</p>
+        <button onclick="addToCart('Ladakh Expedition', 55000)">Add to Cart</button>
+        <a href="#ladakh-details">Explore Itinerary</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Spiti Details -->
+  <section id="spiti-details">
+    <h2>Spiti Valley Itinerary (7D/6N)</h2>
+    <p><b>Day 1:</b> Chandigarh → Narkanda (Greenberry Hotel)</p>
+    <p><b>Day 2:</b> Narkanda → Kalpa (Hotel Kinner Villa)</p>
+    <p><b>Day 3:</b> Kalpa → Tabo (Maitreya Mud House)</p>
+    <p><b>Day 4:</b> Tabo → Kaza (Hotel Sakya Abode)</p>
+    <p><b>Day 5:</b> Kaza sightseeing (Hikkim, Komic, Langza)</p>
+    <p><b>Day 6:</b> Kaza → Rampur (Hotel Nau Nabh Heritage)</p>
+    <p><b>Day 7:</b> Rampur → Chandigarh</p>
+  </section>
+
+  <!-- Ladakh Details -->
+  <section id="ladakh-details">
+    <h2>Ladakh Expedition Itinerary (6D/5N)</h2>
+    <p><b>Day 1:</b> Arrival in Leh, acclimatization, evening market.</p>
+    <p><b>Day 2:</b> Leh local sightseeing (Magnetic Hill, Hall of Fame, Shanti Stupa).</p>
+    <p><b>Day 3:</b> Leh → Nubra Valley via Khardung La.</p>
+    <p><b>Day 4:</b> Nubra → Pangong Lake.</p>
+    <p><b>Day 5:</b> Pangong → Korzok (Tso Moriri).</p>
+    <p><b>Day 6:</b> Korzok → Manali (via Puga Hot Spring, Tso Kar, Baralacha La).</p>
+  </section>
+
+  <!-- Cart -->
+  <div id="cart-icon" onclick="toggleCart()">🛒<span id="cart-count">0</span></div>
+  <div id="cart-modal">
+    <h3>Your Cart</h3>
+    <ul id="cart-items"></ul>
+    <form id="order-form">
+      <input type="text" id="customer-name" placeholder="Your Name" required>
+      <input type="tel" id="customer-phone" placeholder="Phone Number" required>
+      <button id="send-order" type="submit">Send Order</button>
+    </form>
+  </div>
+
+  <!-- WhatsApp Floating -->
+  <a href="https://wa.me/919736990769" class="whatsapp-btn">💬</a>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+  <script>
+    emailjs.init("YOUR_USER_ID"); // replace with EmailJS user id
+
+    let cart = [];
+    function addToCart(name, price) {
+      cart.push({ name, price });
+      document.getElementById('cart-count').textContent = cart.length;
+    }
+
+    function toggleCart() {
+      document.getElement
+
