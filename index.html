@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>white.arc.adventure | Himalayan Adventure & Travel</title>
+  <meta name="description" content="Explore unforgettable Himalayan journeys with white.arc.adventure. Discover curated Ladakh, Spiti Valley and Himalayan travel experiences.">
+  <meta name="theme-color" content="#071b2e">
+
+  <meta property="og:title" content="white.arc.adventure | Himalayan Adventure & Travel">
+  <meta property="og:description" content="Adventure. Culture. Serenity. Explore the Himalayas with Us!">
+  <meta property="og:type" content="website">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- ================= HEADER ================= -->
+<header class="header" id="header">
+  <div class="container nav">
+
+    <a href="#home" class="logo">
+      <span>white.arc</span><strong>adventure</strong>
+    </a>
+
+    <nav class="desktop-nav">
+      <a href="#home">Home</a>
+      <a href="#tours">Tours</a>
+      <a href="#destinations">Destinations</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="nav-actions">
+      <a class="instagram-link"
+         href="https://www.instagram.com/white.arc.adventure?igsh=MTZkYnkwa3FzMGw0Zw=="
+         target="_blank"
+         aria-label="Instagram">◎</a>
+
+      <a class="nav-whatsapp"
+         href="https://wa.me/919736990769"
+         target="_blank">
+        WhatsApp
+      </a>
+
+      <a href="#plan" class="nav-cta">Plan Your Trip</a>
+    </div>
+
+    <button class="menu-btn" id="menuBtn" aria-label="Open menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+  </div>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#home">Home</a>
+    <a href="#tours">Tours</a>
+    <a href="#destinations">Destinations</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+    <a href="#plan">Plan Your Trip</a>
+    <a href="https://wa.me/919736990769" target="_blank">WhatsApp</a>
+    <a href="https://www.instagram.com/white.arc.adventure?igsh=MTZkYnkwa3FzMGw0Zw==" target="_blank">Instagram</a>
+  </div>
+</header>
+
+
+<!-- ================= HERO ================= -->
+<section class="hero" id="home">
+
+  <img
+    id="heroFallback"
+    class="hero-image"
+    src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Spiti%20Valley.jpg"
+    alt="Himalayan mountains in Spiti Valley"
+  >
+
+  <video
+    class="hero-video"
+    id="heroVideo"
+    autoplay
+    muted
+    loop
+    playsinline
+    preload="metadata"
+    poster="https://commons.wikimedia.org/wiki/Special:Redirect/file/Spiti%20Valley.jpg">
+    <source src="https://videos.pexels.com/video-files/36511233/15420130_3840_2160_30fps.mp4" type="video/mp4">
+  </video>
+
+  <div class="hero-overlay"></div>
+
+  <div class="hero-content container">
+
+    <div class="eyebrow hero-animate">
+      EXPLORE <span>•</span> ADVENTURE <span>•</span> EXPERIENCE
+    </div>
+
+    <h1 class="hero-animate">
+      Adventure.<br>
+      Culture.<br>
+      <em>Serenity.</em>
+    </h1>
+
+    <p class="hero-sub hero-animate">
+      Explore the Himalayas with Us!
+    </p>
+
+    <p class="hero-description hero-animate">
+      Curated Himalayan journeys, premium stays and unforgettable mountain experiences.
+    </p>
+
+    <div class="hero-buttons hero-animate">
+      <a href="#tours" class="btn btn-primary">Explore Tours <span>↗</span></a>
+      <a href="#plan" class="btn btn-outline">Plan Your Trip</a>
+    </div>
+
+  </div>
+
+  <div class="hero-search">
+    <div class="search-label">Choose Your Destination</div>
+
+    <select id="destinationSelect">
+      <option value="">Select destination</option>
+      <option value="spiti">Spiti Valley</option>
+      <option value="ladakh">Ladakh</option>
+      <option value="himachal">Himachal Pradesh</option>
+      <option value="uttarakhand">Uttarakhand</option>
+      <option value="kashmir">Kashmir</option>
+      <option value="custom">Customized Trip</option>
+    </select>
+
+    <button id="searchBtn">Search <span>→</span></button>
+  </div>
+
+  <div class="scroll-indicator">
+    <span>Scroll to Explore</span>
+    <div class="scroll-line"></div>
+  </div>
+
+</section>
+
+
+<!-- ================= INTRO ================= -->
+<section class="intro section">
+  <div class="container intro-grid">
+
+    <div class="section-number">01</div>
+
+    <div>
+      <div class="eyebrow dark">THE HIMALAYAN EXPERIENCE</div>
+      <h2>
+        More than a trip.<br>
+        <em>A journey into the mountains.</em>
+      </h2>
+    </div>
+
+    <div class="intro-text">
+      <p>
+        At white.arc.adventure, we create thoughtfully designed Himalayan journeys
+        where dramatic landscapes meet authentic culture, comfort and adventure.
+      </p>
+
+      <a href="#about" class="text-link">Discover Our Story <span>↗</span></a>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ================= FEATURED TOURS ================= -->
+<section class="tours section" id="tours">
+  <div class="container">
+
+    <div class="section-top reveal">
+      <div>
+        <div class="eyebrow dark">CURATED JOURNEYS</div>
+        <h2>Featured <em>Packages</em></h2>
+      </div>
+
+      <div class="carousel-buttons">
+        <button id="prevBtn">←</button>
+        <button id="nextBtn">→</button>
+      </div>
+    </div>
+
+    <p class="section-intro reveal">
+      Best Himalayan tours designed for travellers who want to experience the mountains differently.
+    </p>
+
+    <div class="tour-track" id="tourTrack"></div>
+
+  </div>
+</section>
+
+
+<!-- ================= CINEMATIC IMAGE SECTION ================= -->
+<section class="cinematic-section">
+  <img
+    src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Pangong%20lake%20at%20leh%20ladakh%20%282%29.jpg"
+    alt="Pangong Lake Ladakh"
+    loading="lazy"
+  >
+
+  <div class="cinematic-overlay"></div>
+
+  <div class="cinematic-content reveal">
+    <div class="eyebrow">INTO THE HIMALAYAS</div>
+    <h2>Some journeys<br><em>are remembered forever.</em></h2>
+    <a href="#tours" class="btn btn-primary">Explore Our Tours <span>↗</span></a>
+  </div>
+</section>
+
+
+<!-- ================= WHY US ================= -->
+<section class="why section">
+  <div class="container">
+
+    <div class="section-heading centered reveal">
+      <div class="eyebrow dark">WHY WHITE.ARC.ADVENTURE</div>
+      <h2>Travel with <em>intention.</em></h2>
+      <p>
+        Every journey is planned around comfort, safety, local knowledge and meaningful experiences.
+      </p>
+    </div>
+
+    <div class="why-grid">
+
+      <div class="why-card reveal">
+        <span>01</span>
+        <div class="icon">✦</div>
+        <h3>Expert Guides</h3>
+        <p>Knowledgeable local guides who provide insightful assistance throughout your journey.</p>
+      </div>
+
+      <div class="why-card reveal">
+        <span>02</span>
+        <div class="icon">⌂</div>
+        <h3>Comfortable Stays</h3>
+        <p>Carefully selected premium and comfortable accommodation across the Himalayas.</p>
+      </div>
+
+      <div class="why-card reveal">
+        <span>03</span>
+        <div class="icon">◇</div>
+        <h3>Safety Assured</h3>
+        <p>Experienced drivers and safety-focused travel planning for high-altitude journeys.</p>
+      </div>
+
+      <div class="why-card reveal">
+        <span>04</span>
+        <div class="icon">∞</div>
+        <h3>Memorable Experiences</h3>
+        <p>Adventure, culture, landscapes and authentic Himalayan experiences.</p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ================= DESTINATIONS ================= -->
+<section class="destinations section" id="destinations">
+
+  <div class="container">
+
+    <div class="section-top reveal">
+      <div>
+        <div class="eyebrow dark">WHERE WILL YOU GO?</div>
+        <h2>Explore the <em>Himalayas</em></h2>
+      </div>
+    </div>
+
+    <div class="destination-grid">
+
+      <article class="destination-card large reveal">
+        <img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Spiti%20Valley.jpg"
+             alt="Spiti Valley Himalayan landscape"
+             loading="lazy">
+        <div class="destination-overlay"></div>
+        <div class="destination-content">
+          <small>HIMACHAL PRADESH</small>
+          <h3>Spiti Valley</h3>
+          <p>Monasteries, high-altitude villages and dramatic cold-desert landscapes.</p>
+          <button class="destination-btn" data-destination="spiti">Explore →</button>
+        </div>
+      </article>
+
+      <article class="destination-card reveal">
+        <img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Landscape.ladakh.jpg"
+             alt="Ladakh mountain landscape"
+             loading="lazy">
+        <div class="destination-overlay"></div>
+        <div class="destination-content">
+          <small>LADAKH</small>
+          <h3>Ladakh</h3>
+          <p>A land of extraordinary scale, monasteries and high mountain passes.</p>
+          <button class="destination-btn" data-destination="ladakh">Explore →</button>
+        </div>
+      </article>
+
+      <article class="destination-card reveal">
+        <img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Key%2C%20Spiti%20Valley.jpg"
+             alt="Key Monastery Spiti Valley"
+             loading="lazy">
+        <div class="destination-overlay"></div>
+        <div class="destination-content">
+          <small>SPITI</small>
+          <h3>Key Monastery</h3>
+          <p>An iconic Himalayan monastery overlooking the Spiti River valley.</p>
+          <button class="destination-btn" data-destination="spiti">Explore →</button>
+        </div>
+      </article>
+
+      <article class="destination-card reveal">
+        <img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Pangong%20lake%20at%20leh%20ladakh%20%282%29.jpg"
+             alt="Pangong Lake Ladakh"
+             loading="lazy">
+        <div class="destination-overlay"></div>
+        <div class="destination-content">
+          <small>LADAKH</small>
+          <h3>Pangong Lake</h3>
+          <p>The legendary high-altitude lake surrounded by stark mountains.</p>
+          <button class="destination-btn" data-destination="ladakh">Explore →</button>
+        </div>
+      </article>
+
+      <article class="destination-card large reveal">
+        <img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Tso%20Moriri%2C%20Ladakh.jpg"
+             alt="Tso Moriri Ladakh"
+             loading="lazy">
+        <div class="destination-overlay"></div>
+        <div class="destination-content">
+          <small>CHANGTHANG</small>
+          <h3>Tso Moriri</h3>
+          <p>A remote Himalayan lake surrounded by immense mountain wilderness.</p>
+          <button class="destination-btn" data-destination="ladakh">Explore →</button>
+        </div>
+      </article>
+
+      <article class="destination-card reveal">
+        <img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Spiti%20Valley.jpg"
+             alt="Himachal Pradesh mountains"
+             loading="lazy">
+        <div class="destination-overlay"></div>
+        <div class="destination-content">
+          <small>NORTH INDIA</small>
+          <h3>Himachal Pradesh</h3>
+          <p>From pine forests to high-altitude deserts, discover mountain country.</p>
+          <button class="destination-btn" data-destination="spiti">Explore →</button>
+        </div>
+      </article>
+
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ================= ABOUT ================= -->
+<section class="about section" id="about">
+
+  <div class="container about-grid">
+
+    <div class="about-image reveal">
+      <img
+        src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Key%2C%20Spiti%20Valley.jpg"
+        alt="Key Monastery in Spiti Valley"
+        loading="lazy">
+      <div class="image-tag">WHITE.ARC.ADVENTURE</div>
+    </div>
+
+    <div class="about-content reveal">
+
+      <div class="eyebrow dark">OUR PHILOSOPHY</div>
+
+      <h2>
+        Travel Beyond<br>
+        <em>The Ordinary.</em>
+      </h2>
+
+      <p>
+        white.arc.adventure creates carefully planned Himalayan journeys combining
+        adventure, culture, comfort and serenity.
+      </p>
+
+      <div class="about-list">
+        <div>✓ Curated itineraries</div>
+        <div>✓ Local experiences</div>
+        <div>✓ Premium stays</div>
+        <div>✓ Professional trip planning</div>
+        <div>✓ Personalized travel support</div>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ================= HOW IT WORKS ================= -->
+<section class="steps section">
+  <div class="container">
+
+    <div class="section-heading centered reveal">
+      <div class="eyebrow dark">SIMPLE. PERSONAL. HUMAN.</div>
+      <h2>Your Journey <em>Starts Here</em></h2>
+    </div>
+
+    <div class="steps-grid">
+
+      <div class="step reveal">
+        <span>01</span>
+        <h3>Choose Your Package</h3>
+        <p>Explore our curated Himalayan journeys.</p>
+      </div>
+
+      <div class="step reveal">
+        <span>02</span>
+        <h3>Send Your Enquiry</h3>
+        <p>Tell us your dates, group size and requirements.</p>
+      </div>
+
+      <div class="step reveal">
+        <span>03</span>
+        <h3>Check Availability</h3>
+        <p>We'll discuss availability and final trip details with you.</p>
+      </div>
+
+      <div class="step reveal">
+        <span>04</span>
+        <h3>Confirm Your Booking</h3>
+        <p>Once everything is agreed, your journey can be confirmed.</p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ================= PLAN YOUR TRIP ================= -->
+<section class="plan section" id="plan">
+
+  <div class="container plan-grid">
+
+    <div class="plan-copy reveal">
+      <div class="eyebrow">CUSTOM HIMALAYAN JOURNEYS</div>
+
+      <h2>
+        Plan Your<br>
+        <em>Trip.</em>
+      </h2>
+
+      <p>
+        Tell us where you want to go. We'll help you plan the journey.
+      </p>
+
+      <div class="plan-contact">
+        <span>WhatsApp</span>
+        <strong>+91 97369 90769</strong>
+      </div>
+    </div>
+
+    <form class="trip-form reveal" id="tripForm">
+
+      <div class="form-row">
+        <div class="field">
+          <label>Full Name *</label>
+          <input type="text" id="planName" required>
+        </div>
+
+        <div class="field">
+          <label>Phone Number *</label>
+          <input type="tel" id="planPhone" required>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="field">
+          <label>Email</label>
+          <input type="email" id="planEmail">
+        </div>
+
+        <div class="field">
+          <label>Destination *</label>
+          <select id="planDestination" required>
+            <option value="">Select destination</option>
+            <option>Spiti Valley</option>
+            <option>Ladakh</option>
+            <option>Himachal Pradesh</option>
+            <option>Uttarakhand</option>
+            <option>Kashmir</option>
+            <option>Customized Trip</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="field">
+          <label>Travel Date</label>
+          <input type="date" id="planDate">
+        </div>
+
+        <div class="field">
+          <label>Number of Travelers *</label>
+          <input type="number" id="planTravelers" min="1" required>
+        </div>
+      </div>
+
+      <div class="field">
+        <label>Message</label>
+        <textarea id="planMessage" rows="4" placeholder="Tell us about your trip..."></textarea>
+      </div>
+
+      <button type="submit" class="btn btn-light full">
+        Send Enquiry on WhatsApp <span>↗</span>
+      </button>
+
+    </form>
+
+  </div>
+
+</section>
+
+
+<!-- ================= INSTAGRAM ================= -->
+<section class="instagram-section section">
+
+  <div class="container instagram-inner reveal">
+
+    <div>
+      <div class="eyebrow dark">FOLLOW OUR JOURNEY</div>
+      <h2>Life <em>Beyond The Road.</em></h2>
+      <p>Explore our latest Himalayan adventures.</p>
+    </div>
+
+    <a
+      href="https://www.instagram.com/white.arc.adventure?igsh=MTZkYnkwa3FzMGw0Zw=="
+      target="_blank"
+      class="btn btn-dark">
+      Follow on Instagram <span>↗</span>
+    </a>
+
+  </div>
+
+</section>
+
+
+<!-- ================= CONTACT ================= -->
+<section class="contact section" id="contact">
+
+  <div class="container contact-grid">
+
+    <div class="contact-title reveal">
+      <div class="eyebrow">GET IN TOUCH</div>
+      <h2>Let's plan your<br><em>next escape.</em></h2>
+    </div>
+
+    <div class="contact-details reveal">
+
+      <a href="tel:+919736990769">
+        <span>Call</span>
+        <strong>+91 97369 90769</strong>
+      </a>
+
+      <a href="https://wa.me/919736990769" target="_blank">
+        <span>WhatsApp</span>
+        <strong>+91 97369 90769</strong>
+      </a>
+
+      <a href="mailto:negiarun631@gmail.com">
+        <span>Email</span>
+        <strong>negiarun631@gmail.com</strong>
+      </a>
+
+      <a href="https://www.instagram.com/white.arc.adventure?igsh=MTZkYnkwa3FzMGw0Zw==" target="_blank">
+        <span>Instagram</span>
+        <strong>@white.arc.adventure</strong>
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+<footer>
+
+  <div class="container footer-main">
+
+    <div>
+      <a href="#home" class="footer-logo">white.arc.<strong>adventure</strong></a>
+      <p>Adventure. Culture. Serenity.</p>
+    </div>
+
+    <div class="footer-links">
+      <a href="#home">Home</a>
+      <a href="#tours">Tours</a>
+      <a href="#destinations">Destinations</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </div>
+
+  </div>
+
+  <div class="container credits">
+
+    <details>
+      <summary>Image Credits</summary>
+      <p>
+        Photography sources:
+        <a href="https://commons.wikimedia.org/wiki/Special:Redirect/file/Spiti%20Valley.jpg" target="_blank">Spiti Valley</a>,
+        <a href="https://commons.wikimedia.org/wiki/Special:Redirect/file/Landscape.ladakh.jpg" target="_blank">Ladakh</a>,
+        <a href="https://commons.wikimedia.org/wiki/Special:Redirect/file/Key%2C%20Spiti%20Valley.jpg" target="_blank">Key Monastery</a>,
+        <a href="https://commons.wikimedia.org/wiki/Special:Redirect/file/Pangong%20lake%20at%20leh%20ladakh%20%282%29.jpg" target="_blank">Pangong Lake</a>,
+        <a href="https://commons.wikimedia.org/wiki/Special:Redirect/file/Tso%20Moriri%2C%20Ladakh.jpg" target="_blank">Tso Moriri</a>.
+      </p>
+    </details>
+
+    <p>© 2026 white.arc.adventure. All rights reserved.</p>
+
+  </div>
+
+</footer>
+
+
+<!-- ================= WHATSAPP FLOAT ================= -->
+<a
+  href="https://wa.me/919736990769?text=Hi%20white.arc.adventure%2C%20I%E2%80%99m%20interested%20in%20planning%20a%20Himalayan%20trip.%20Please%20share%20the%20available%20packages%20and%20details."
+  target="_blank"
+  class="floating-whatsapp"
+  aria-label="WhatsApp">
+  <span>WhatsApp</span>
+  <b>↗</b>
+</a>
+
+
+<!-- ================= TOUR MODAL ================= -->
+<div class="modal" id="tourModal">
+
+  <div class="modal-backdrop" id="modalBackdrop"></div>
+
+  <div class="modal-box">
+
+    <button class="modal-close" id="modalClose">×</button>
+
+    <div id="modalContent"></div>
+
+  </div>
+
+</div>
+
+
+<!-- ================= BOOKING MODAL ================= -->
+<div class="modal" id="bookingModal">
+
+  <div class="modal-backdrop" id="bookingBackdrop"></div>
+
+  <div class="booking-box">
+
+    <button class="modal-close" id="bookingClose">×</button>
+
+    <div class="eyebrow dark">BOOK YOUR JOURNEY</div>
+    <h2>Send Your <em>Enquiry</em></h2>
+
+    <form id="bookingForm">
+
+      <div class="field">
+        <label>Full Name *</label>
+        <input type="text" id="bookingName" required>
+      </div>
+
+      <div class="field">
+        <label>Phone Number *</label>
+        <input type="tel" id="bookingPhone" required>
+      </div>
+
+      <div class="field">
+        <label>Email</label>
+        <input type="email" id="bookingEmail">
+      </div>
+
+      <div class="field">
+        <label>Selected Tour *</label>
+        <input type="text" id="bookingTour" readonly required>
+      </div>
+
+      <div class="form-row">
+        <div class="field">
+          <label>Travel Date *</label>
+          <input type="date" id="bookingDate" required>
+        </div>
+
+        <div class="field">
+          <label>Travelers *</label>
+          <input type="number" id="bookingTravelers" min="1" required>
+        </div>
+      </div>
+
+      <div class="field">
+        <label>Special Requirements</label>
+        <textarea id="bookingRequirements" rows="4"></textarea>
+      </div>
+
+      <button class="btn btn-primary full" type="submit">
+        Continue on WhatsApp <span>↗</span>
+      </button>
+
+      <small class="form-note">
+        WhatsApp will open with your enquiry pre-filled. You will need to press Send.
+      </small>
+
+    </form>
+
+  </div>
+
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
